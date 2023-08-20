@@ -30,7 +30,7 @@ export const Card: React.FC<ICard> = ({
     <div
       className="c-card"
       style={{
-        backgroundColor: `#${color}`,
+        backgroundColor: color,
         opacity: orderSelect === ordem ? 0.2 : 1,
       }}
       onClick={handleSelect}

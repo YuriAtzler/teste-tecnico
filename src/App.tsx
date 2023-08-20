@@ -9,6 +9,19 @@ interface IList {
   color: string;
 }
 
+const colors = [
+  "#FF5733", // Laranja
+  "#E5E542", // Amarelo
+  "#42E55C", // Verde
+  "#428FE5", // Azul
+  "#E542B6", // Rosa
+  "#E5425C", // Vermelho
+  "#42E5DB", // Turquesa
+  "#8542E5", // Roxo
+  "#42B4E5", // Azul claro
+  "#42E5A8", // Verde claro
+];
+
 export const App: React.FC = () => {
   const [list, setList] = useState<IList[]>([]);
   const [newOrder, setNewOrder] = useState<string>("");
@@ -67,7 +80,7 @@ export const App: React.FC = () => {
           index: i,
           ordem: i + 1,
           id: i * 10,
-          color: Math.floor(Math.random() * 16777215).toString(16),
+          color: colors[i],
         });
       }
       setList(newList);
