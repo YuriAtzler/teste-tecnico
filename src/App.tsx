@@ -47,7 +47,7 @@ export const App: React.FC = () => {
       index = indexSelect;
     } else {
       order = parseInt(stringOrder);
-      index = parseInt(stringIndex);
+      index = parseInt(stringIndex) - 1;
     }
 
     const item = list.find((item) => item.ordem === order);
@@ -94,7 +94,7 @@ export const App: React.FC = () => {
           list.map((item, index) => (
             <Card
               key={item.id}
-              index={index}
+              index={index + 1}
               ordem={item.ordem}
               color={item.color}
               orderSelect={orderSelect}

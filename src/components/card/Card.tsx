@@ -20,7 +20,7 @@ export const Card: React.FC<ICard> = ({
 }) => {
   const handleSelect = () => {
     if (orderSelect) {
-      handleChangeOrder(index);
+      handleChangeOrder(index - 1);
     } else {
       setOrderSelect(ordem);
     }
