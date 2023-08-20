@@ -1,0 +1,24 @@
+.c-card {
+  display: flex;
+  flex: 1;
+  margin: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+  &__order {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  &__index {
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+  }
+}
